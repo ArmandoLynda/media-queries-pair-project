@@ -1,0 +1,39 @@
+@media screen and (max-width:576px) {
+
+
+    .alert-info {
+        width: auto;
+        height: auto;
+        background-color: lightskyblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .hidden-on-desktop {
+
+    }
+    .nav-links {
+
+    }
+    .header-img {
+        img src="https://via.placeholder.com/339x224?";
+    }
+    .main {
+
+    }
+    .sub-section {
+
+    }
+
+    #social-media-links {
+
+    }
+}
+
+
