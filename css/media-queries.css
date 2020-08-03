@@ -10,6 +10,7 @@
     }
     body {
         padding: 1em;
+        margin: 1em;
      }
     h1 {
         font-size: 40px;
@@ -37,54 +38,63 @@
         padding: 2px;
         margin: 10px auto;
     }
-    .header-img {
+    .header-img img{
         width: auto;
         max-width: 100%;
         height: auto;
     }
     section {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: space-between;
         width: auto;
         height: auto;
     }
-
-    footer {
-        position: absolute;
-        bottom: 0;
+    h2 {
+        font-size: 20px;
+        padding: .1em;
+        margin: .1em;
+        text-align: left;
     }
+    .main, .sub-section {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    }
+    .sub-section {
+        font-style: italic;
+    }
+
+
+
 }
 @media screen and (min-width: 577px) {
-    * {
-        /*width: auto;*/
-        /*height: auto;*/
-        /*padding: 0;*/
-        /*margin: 0;*/
-        /*border: 0;*/
-        /*font-size: 100%;*/
-        /*vertical-align: baseline;*/
-    }
+
     h1 {
         font-size: 20px;
+        float: left;
     }
     .hidden-on-desktop {
         display:none;
     }
+    nav {
+        float: right;
+    }
     .nav-links {
+        /*float: right;*/
         display: flex;
         flex-direction: row;
-        align-content: flex-end;
-        /*justify-content: space-between;*/
-        text-align: center;
+        /*align-content: flex-end;*/
+        justify-content: space-between;
+        /*text-align: center;*/
         list-style-type: none;
-        /*padding: 2px 0 2px 400px;*/
-        margin: 10px auto;
+        /*padding: 2px;*/
+        /*margin: 10px auto;*/
     }
-    .header-img {
+    .header-img img{
         width: auto;
         max-width: 100%;
         height: auto;
-        align-items: center;
     }
     /*section {*/
     /*    display: flex;*/
@@ -103,7 +113,7 @@
         /*flex: grow 2;*/
         /*padding: auto;*/
         /*margin: auto;*/
-        /*float: left;*/
+        float: left;
         width: 70%;
         /*height: 100px;*/
         /*margin: 10px;*/
@@ -112,7 +122,7 @@
         /*padding: auto;*/
         /*margin: auto;*/
         /*display: flex;*/
-        /*float: right;*/
+        float: right;
         width: 30%;
         /*height: 100px;*/
         /*margin: 10px;*/
